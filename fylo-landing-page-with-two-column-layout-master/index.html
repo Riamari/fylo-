@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | Fylo landing page with two column layout</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+    body{
+      margin: 0;
+      padding: 0;
+      
+    }
+    
+    .header{
+      overflow: hidden;
+      padding: 10px; 
+      
+  
+    }
+    .a{
+      width: 100px;
+      object-fit: contain;
+    
+    }
+   
+    .b{
+      float: right;
+      color: black;
+      background-color: white;
+      padding: 12px;
+      border-radius: 0px;
+      border: 0;
+      margin-right: 0%;
+      border: 0;
+      
+      
+    }
+    .get{
+      background-color: hsl(224, 93%, 58%);
+      color: aliceblue;
+      padding: 8px 30px;
+      border-radius: 0%;
+
+    }
+    .mov,.hero{
+      width: 95%;
+      max-width: 1440px;
+      margin: auto;
+      align-items: center;
+    }
+
+   
+    .hero{
+      display: flex;
+      justify-content: space-between;
+    }
+    .first_hero_box{
+      width: 75;
+    }
+    .second_hero_box{
+      width: 55;
+      scale: 100%;
+      margin-left: 40px;
+    }
+   
+    .mov{
+      margin-bottom: 10px;
+    }
+    .header_text{
+      width: 60%;
+      font-size: 28px;
+      font-family: "Raleway", sans-serif;
+    
+    }
+    .header_text1{
+      width: 70%;
+      font-size: 16px;
+      font-family: "Open Sans", sans-serif;
+      font-weight: 400;
+
+    }
+
+    
+    .fill{
+      border-radius: 0%;
+      border: 10%;
+      font-size: small;
+      text-align: left;
+      color: gray;
+      background-color: white;
+     width: 40%;
+      line-height: 200%;
+      margin-right: 10px
+      }
+      .second_section{
+        padding-top: 50px;
+      }
+
+      .demo {
+    margin-top: 8rem;
+    margin-bottom: 8rem
+}
+
+.demo__content {
+    width: 100%;
+    max-width: 1300px;
+    margin-right: auto;
+    margin-left: auto
+}
+
+.demo__flex-container {
+    display: flex;
+    flex-direction: column
+  }
+
+  @media (min-width: 768px) {
+    .demo__flex-container {
+        flex-direction:row;
+        justify-content: center;
+        align-items: center
+    }
+  }
+  .demo__img-container {
+    max-width: 800px}
+      
+
+      .demo__description {
+    margin-top: 0.7rem;
+    color: #dad8d8;
+    line-height: 1.6
+      }
+      
+
+      .demo__link {
+    margin-top: 0.7rem;
+    padding-bottom: 7px;
+    font-size: 13px;
+    border-bottom: 0.3px solid #65e2d9;
+    color: #65e2d9;
+    display: inline-block;
+    text-decoration: none
+      }
+
+      .demo__link:hover {
+    color: #fff;
+    border-bottom: 1px solid #fff;
+    transition: all 0.3s ease-out
+}
+
+.demo__icon {
+    display: inline-block;
+    height: 16px;
+    min-width: 0;
+    padding-left: 5px;
+    transform: translateY(4px)
+}
+
+
+      .textbox{
+      width: 250px;
+      height: 150px;
+      border-radius: 0px;
+      border: px;
+      border-color: whitesmoke;
+      background-color: white;
+      display: inline-block;
+      justify-content: right;
+      align-items: right;
+      
+        
+       }
+       .avatar{
+        position: absolute;
+        bottom: 0; 
+       margin-left: auto;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        transform: translate(-100px , 150px);
+       }
+       .he{
+        font-size: 10px;
+        
+       }
+       .icon-quotes{
+        transform: translate(-100px , -10px);
+       }
+      
+      
+      
+  </style>
+</head>
+<main class="second_section">
+  <section class="mov">
+    <header class="header">
+    <img src="./images/logo.svg" alt="" class="a">
+    <button class="b">
+      Sign In
+    </button>
+    <button class="b">
+      Team
+    </button>
+    <button class="b">
+      Features
+    </button>
+  </header>
+  </section>
+  <section class="hero">
+    <div class="first_hero_box">
+      <h1 class="header_text">
+        All your files in one secure location, accessible anywhere.
+      </h1>
+      <p class="header_text1">
+        Fylo stores your most important files in one secure location. 
+        Access them wherever you need, share and collaborate with friends, 
+        family, and co-workers.
+      </p>
+      <button class="fill">
+        Enter your email
+      </button>
+      <button class="get">
+        Get Started 
+      </button>
+    </div>
+    <div class="second_hero_box">
+      <img src="images/illustration-1.svg" alt="" style="width: 100%">
+    </div>
+  </section>
+  
+</main>
+
+<main>
+  <section>
+    <div class="demo__content">
+      <div class="demo__flex-container">
+        <div class="demo__img-container img-container">
+          <img src="images/illustration-2.svg" alt="Color illustration showing three people working and sharing files for live collaboration" title="Stay productive illustration" role="img" class="img">
+        </div>
+      <img src="images/bg-curve-desktop.svg" alt="">
+   <h1 class="header_text">
+    Stay productive, wherever you are
+   </h1>
+   <p class="header_text1">
+    Never let location be an issue when accessing your files. Fylo has you 
+        covered for all of your file storage needs.
+   </p>
+   <p class="header_text1">
+    Securely share files and folders with friends, family and colleagues for 
+    live collaboration. No email attachments required!
+   </p>
+   <a href="#" class="demo__link">
+    See how Fylo works
+    <svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="demo__icon icon">
+      <title>Right pointing arrow</title>
+      <desc>
+        An icon of a black arrow pointing rightwards inside of a light
+        green circle
+      </desc>
+      <defs>
+        <circle id="b" cx="6" cy="6" r="6"></circle>
+        <filter x="-25%" y="-25%" width="150%" height="150%" filterUnits="objectBoundingBox" id="a">
+          <feOffset in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+          <feGaussianBlur stdDeviation="1" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+          <feColorMatrix values="0 0 0 0 0.384313725 0 0 0 0 0.878431373 0 0 0 0 0.850980392 0 0 0 0.811141304 0" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+      </defs>
+      <g fill="none" fill-rule="evenodd">
+        <g transform="translate(2 2)">
+          <use fill="#000" filter="url(#a)" xlink:href="#b">
+
+          </use>
+          <use fill="#62E0D9" xlink:href="#b">
+
+          </use>
+        </g>
+        <path d="M8.582 6l-.363.35 1.452 1.4H5.333v.5h4.338L8.22 9.65l.363.35 2.074-2z" fill="#1B2330">
+
+        </path>
+      </g>
+    </svg>
+  </a>
+</div>
+</div>
+</div>
+  </div>
+  <section>
+   <article>
+    <div>
+      <p>
+        
+        Fylo has improved our team productivity by an order of magnitude. Since 
+        making the switch our team has become a well-oiled collaboration machine.
+      </p> 
+       </p> 
+       <p>
+        <b>Kyle Burton</b>
+       </p> 
+       <p>
+        Founder & CEO, Huddle
+      </p>
+    </div>
+   </article>
+  </section>
+</main>
+<body>
+
+  <footer>
+    <div>
+        <img src="images/logo.svg" alt="">
+    </div>
+  </footer>
+   
+
+  
+
+
+  
+
+ 
+  
+
+ 
+  <footer>
+    <p class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Your Name Here</a>.
+    </p>
+  </footer>
+</body>
+</html>
